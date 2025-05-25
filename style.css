@@ -1,0 +1,217 @@
+body{
+    background-color: rgb(237, 237, 237);
+}
+
+.styleLink{
+    text-decoration: none;
+}
+
+/* PANTALLA GRANDE */
+@media (min-width:1250px){
+
+    /* diseño de cabecera */
+    .styleCircle{
+        background-color: rgb(165, 27, 27);
+        border-radius: 0px 0px 80px 80px;
+        height: 150px;
+        padding: 20px;
+        margin-left: -10px;
+        margin-right: -10px;
+        margin-top: -10px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    /* logotipo cabecera */
+    .styleLogo{
+        margin-left: 50px;
+        border-radius: 20px;
+        height: 150px;
+        width: 150px;
+    }
+
+    /* contenedor de cards */
+    .containerCards{
+        margin: 15px;
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    /* estilo header card */
+    .styleHeaderCard{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(49, 127, 66);
+        border-radius: 10px 0px 100px;
+        margin-right: 30%;
+    }
+    .styleHeaderCard2{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(127, 39, 12);
+        border-radius: 10px 0px 100px;
+        margin-right: 30%;
+    }
+    .styleHeaderCard3{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(188, 120, 3);
+        padding-bottom: 20px;
+        border-radius: 10px 0px 100px;
+        margin-right: 30%;
+    }
+
+    /* titulo cabecera */
+    h1{
+        color: white;
+        font-family: fantasy;
+        font-size: 70px;
+    }
+
+    /* diseño de card */
+    .styleCard{
+        margin-top: 20px;
+        height: 450px;
+        width: 500px;
+        display: grid;
+        border-radius: 10px;
+        background-color: rgb(164, 33, 33);
+        box-shadow: 4px 6px 10px 2px rgb(186, 186, 186);
+        text-align: center;
+    }
+
+    /* imagen dentro del card */
+    .styleImg{
+        height: 180px;
+        width: 230px;
+    }
+
+    /* titulo dentro del card */
+    .styleTitleCard{
+        color: white;
+        font-size: 28px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .containerInfo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        
+    }
+
+    .styleText{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 27px;
+    }
+}
+
+/* TELEFONO */
+@media(max-width:425px){
+
+     /* diseño de cabecera */
+     .styleCircle{
+        background-color: rgb(165, 27, 27);
+        border-radius: 0px 0px 50px 50px;
+        height: 110px;
+        padding: 20px;
+        margin-left: -10px;
+        margin-right: -10px;
+        margin-top: -10px;
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
+    }
+
+    /* logotipo cabecera */
+    .styleLogo{
+        border-radius: 20px;
+        height: 100px;
+        width: 100px;
+    }
+
+    /* contenedor de cards */
+    .containerCards{
+        margin-top: 10px;
+        justify-content: center;
+        display: grid;
+    }
+
+    /* estilo header card */
+    .styleHeaderCard{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(49, 127, 66);
+        border-radius: 10px 0px 50px;
+        margin-right: 20%;
+    } 
+    .styleHeaderCard2{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(127, 39, 12);
+        border-radius: 10px 0px 50px;
+        margin-right: 20%;
+    }
+    .styleHeaderCard3{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(188, 120, 3);
+        border-radius: 10px 0px 50px;
+        margin-right: 20%;
+    }
+
+    /* titulo cabecera */
+    h1{
+        margin-left: 15px;
+        color: white;
+        font-family: fantasy;
+        font-size: 28px;
+    }
+
+    /* diseño de card */
+    .styleCard{
+        margin-top: 20px;
+        height: 350px;
+        width: 380px;
+        display: grid;
+        border-radius: 10px;
+        background-color: rgb(164, 33, 33);
+        box-shadow: 4px 6px 10px 2px rgb(186, 186, 186);
+        text-align: center;
+    }
+
+    /* imagen dentro del card */
+    .styleImg{
+        height: 120px;
+        width: 150px;
+    }
+
+    /* titulo dentro del card */
+    .styleTitleCard{
+        color: white;
+        font-size: 25px;
+        padding-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .containerInfo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        
+    }
+
+    .styleText{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+    }
+}
