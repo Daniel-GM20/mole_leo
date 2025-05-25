@@ -1,217 +1,125 @@
-body{
+body {
     background-color: rgb(237, 237, 237);
-}
-
-.styleLink{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .styleLink {
     text-decoration: none;
-}
-
-/* PANTALLA GRANDE */
-@media (min-width:1250px){
-
-    /* diseño de cabecera */
-    .styleCircle{
-        background-color: rgb(165, 27, 27);
-        border-radius: 0px 0px 80px 80px;
-        height: 150px;
-        padding: 20px;
-        margin-left: -10px;
-        margin-right: -10px;
-        margin-top: -10px;
-        display: grid;
-        grid-template-columns: 1fr 2fr;
+  }
+  
+  h1 {
+    color: white;
+    font-family: fantasy;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  /* ENCABEZADO */
+  .styleCircle {
+    background-color: rgb(165, 27, 27);
+    border-radius: 0 0 60px 60px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .styleLogo {
+    border-radius: 20px;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+  }
+  
+  /* CONTENEDOR DE CARDS RESPONSIVO */
+  .containerCards {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  /* Ajuste de columnas responsivo */
+  @media (min-width: 768px) {
+    .containerCards {
+      grid-template-columns: repeat(2, 1fr);
     }
-
-    /* logotipo cabecera */
-    .styleLogo{
-        margin-left: 50px;
-        border-radius: 20px;
-        height: 150px;
-        width: 150px;
+  }
+  @media (min-width: 1024px) {
+    .containerCards {
+      grid-template-columns: repeat(3, 1fr);
     }
-
-    /* contenedor de cards */
-    .containerCards{
-        margin: 15px;
-        display: grid;
-        gap: 15px;
-        grid-template-columns: 1fr 1fr 1fr;
-
-    }
-
-    /* estilo header card */
-    .styleHeaderCard{
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(49, 127, 66);
-        border-radius: 10px 0px 100px;
-        margin-right: 30%;
-    }
-    .styleHeaderCard2{
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(127, 39, 12);
-        border-radius: 10px 0px 100px;
-        margin-right: 30%;
-    }
-    .styleHeaderCard3{
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(188, 120, 3);
-        padding-bottom: 20px;
-        border-radius: 10px 0px 100px;
-        margin-right: 30%;
-    }
-
-    /* titulo cabecera */
-    h1{
-        color: white;
-        font-family: fantasy;
-        font-size: 70px;
-    }
-
-    /* diseño de card */
-    .styleCard{
-        margin-top: 20px;
-        height: 450px;
-        width: 500px;
-        display: grid;
-        border-radius: 10px;
-        background-color: rgb(164, 33, 33);
-        box-shadow: 4px 6px 10px 2px rgb(186, 186, 186);
-        text-align: center;
-    }
-
-    /* imagen dentro del card */
-    .styleImg{
-        height: 180px;
-        width: 230px;
-    }
-
-    /* titulo dentro del card */
-    .styleTitleCard{
-        color: white;
-        font-size: 28px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .containerInfo{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        
-    }
-
-    .styleText{
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 27px;
-    }
-}
-
-/* TELEFONO */
-@media(max-width:425px){
-
-     /* diseño de cabecera */
-     .styleCircle{
-        background-color: rgb(165, 27, 27);
-        border-radius: 0px 0px 50px 50px;
-        height: 110px;
-        padding: 20px;
-        margin-left: -10px;
-        margin-right: -10px;
-        margin-top: -10px;
-        display: grid;
-        grid-template-columns: 1.5fr 2fr;
-    }
-
-    /* logotipo cabecera */
-    .styleLogo{
-        border-radius: 20px;
-        height: 100px;
-        width: 100px;
-    }
-
-    /* contenedor de cards */
-    .containerCards{
-        margin-top: 10px;
-        justify-content: center;
-        display: grid;
-    }
-
-    /* estilo header card */
-    .styleHeaderCard{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(49, 127, 66);
-        border-radius: 10px 0px 50px;
-        margin-right: 20%;
-    } 
-    .styleHeaderCard2{
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(127, 39, 12);
-        border-radius: 10px 0px 50px;
-        margin-right: 20%;
-    }
-    .styleHeaderCard3{
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(188, 120, 3);
-        border-radius: 10px 0px 50px;
-        margin-right: 20%;
-    }
-
-    /* titulo cabecera */
-    h1{
-        margin-left: 15px;
-        color: white;
-        font-family: fantasy;
-        font-size: 28px;
-    }
-
-    /* diseño de card */
-    .styleCard{
-        margin-top: 20px;
-        height: 350px;
-        width: 380px;
-        display: grid;
-        border-radius: 10px;
-        background-color: rgb(164, 33, 33);
-        box-shadow: 4px 6px 10px 2px rgb(186, 186, 186);
-        text-align: center;
-    }
-
-    /* imagen dentro del card */
-    .styleImg{
-        height: 120px;
-        width: 150px;
-    }
-
-    /* titulo dentro del card */
-    .styleTitleCard{
-        color: white;
-        font-size: 25px;
-        padding-top: 10px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .containerInfo{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        
-    }
-
-    .styleText{
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
-    }
-}
+  }
+  
+  /* CARD GENERAL */
+  .styleCard {
+    background-color: rgb(164, 33, 33);
+    border-radius: 10px;
+    box-shadow: 4px 6px 10px 2px rgb(186, 186, 186);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* HEADER DE LA CARD */
+  .styleHeaderCard,
+  .styleHeaderCard2,
+  .styleHeaderCard3 {
+    padding: 10px;
+    border-radius: 10px 0 50px;
+    width: fit-content;
+    margin: 0 auto 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .styleHeaderCard {
+    background-color: rgb(49, 127, 66);
+  }
+  .styleHeaderCard2 {
+    background-color: rgb(127, 39, 12);
+  }
+  .styleHeaderCard3 {
+    background-color: rgb(188, 120, 3);
+  }
+  
+  /* TITULO DE LA CARD */
+  .styleTitleCard {
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  /* CONTENIDO DE LA CARD */
+  .containerInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .styleText {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    flex: 1 1 45%;
+  }
+  
+  .styleImg {
+    height: 150px;
+    width: auto;
+    max-width: 100%;
+    flex: 1 1 45%;
+    object-fit: contain;
+  }  
